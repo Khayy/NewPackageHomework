@@ -7,6 +7,9 @@ myseq_n <- function(x, n){
     }else {
       nums[i] <- nums[i-1] + (nums[i-3] - nums[i-2])/i
     }
+    if(length(x) > 3){
+      stop("input too long")
+    }
   }
   return(nums[n])
 }
