@@ -1,3 +1,17 @@
+#' @title Plot Function
+#'
+#' @description This function plots the sequence of the data frame comes out as a line plot
+#'
+#' @param x Dataframe
+#'
+#' @importFrom ggplot2 ggplot aes geom_line
+#' @importFrom magrittr %>%
+#'
+#' @return
+#' @export  my_seq_plot
+#'
+#' @examples
+
 my_seq_plot <- function(x) {
   output2 <- vector("double")
   is.data.frame(x) != T
